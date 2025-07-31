@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.env
+
+# JavaScript / Node
+node_modules/
+dist/
+build/
+
+# CSS / assets
+*.css.map
+
+# IDE/editor
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# log files
+*.log
+
+# dotenv variants
+.env.local
+.env.*.local
+
+# Mac
+.AppleDouble
+.LSOverride
+
+# JetBrains IDEs
+.idea/
+
+# Coverage
+coverage/

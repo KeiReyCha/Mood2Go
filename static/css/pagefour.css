@@ -1,0 +1,215 @@
+
+.page4{
+  width: 390px;
+  height: 844px;
+  justify-content: center; 
+  align-items: center; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;  
+  position: relative;
+}
+#map {
+  width: 100%;
+  height: 60%;
+}
+.CharacterBody {
+  width: 846px;
+  height: 846px;
+  background: #EB6ABA;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -423px; /* half the circle's height */
+  left: -226px; 
+  z-index: 3;
+}
+
+
+.GenerateButton {
+  left: 132px; 
+  top: 760px; 
+  position: absolute; 
+  background: #494949; 
+  overflow: hidden; 
+  border-radius: 10px; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.2s ease;
+  z-index: 5;
+}
+
+.GenerateButton:hover {
+  opacity: 0.7;
+} 
+.GenerateButton.active {
+  opacity: 1;
+  background: #000;
+}
+
+
+.HowFarUWantToTravel{
+  width: 348px; 
+  height: 100px; 
+  left: 23px; 
+  top: 600px; 
+  position: absolute; 
+  text-align: center; 
+  justify-content: center; 
+  display: flex; 
+  flex-direction: column; 
+  color: white; 
+  font-size: 40px; 
+  font-family: Poppins; 
+  font-weight: 700; 
+  line-height: 40px; 
+  word-wrap: break-word;
+  z-index: 3;
+}
+
+.Eyes {
+  position: absolute;
+  top: 54%;    
+  left: 24%;   
+  display: flex;
+  gap: 8.40%;     
+  z-index: 3;
+}
+.Mata {
+  width: 93px;      
+  height: 93px;     
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.Pupil {
+  width: 60px;      
+  height: 60px;    
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Mouth{
+  left: 170px; 
+  top:540px; 
+  position: absolute;
+  z-index: 3;
+}
+  .slider-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  left: 27px;
+  top: 712px;
+  z-index: 5;
+  width: 330px;
+  background: #EB6ABA;
+  padding: 8px;
+  border-radius: 10px;
+  }
+
+  #distanceSlider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #ffffffb9; 
+  border-radius: 10px;
+  outline: none;
+  z-index: 5;
+  }
+
+  #distanceSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -2px;
+  transition: background 0.3s ease;
+  z-index: 5;
+  }
+
+  /* Firefox thumb */
+  #distanceSlider::-moz-range-thumb {
+  height: 25px;
+  width: 25px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  }
+
+  .km-label {
+  display: flex;
+  align-items: baseline;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  min-width: 48px; /* Prevents layout shift */
+  z-index: 5;
+  }
+
+  .km-unit {
+  margin-left: 2px;
+  }
+
+  .static-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.6);
+  clip-path: url(#circleHole);
+  z-index: 2;
+  }
+
+  #map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+  background-color: rgba(0, 0, 0, 0.5);
+  mask-image: radial-gradient( circle at 50% 30%, transparent 100px,black 170px);
+  -webkit-mask-image: radial-gradient(circle at 50% 30%, transparent 170px, black 100px);
+  }
+
+.flood-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: #ECECD4; 
+  z-index: 1;
+  transition: height 0.4s ease-out;
+}
+
+
+.page4.expanding .flood-box {
+  height: 100%;
+}

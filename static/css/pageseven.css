@@ -1,0 +1,74 @@
+
+  .page7{
+    width: 393px; 
+    height: 852px; 
+    position: relative; 
+    background: #F7F7EE; 
+    overflow: hidden;
+  }
+  .bodycharac{
+    width: 846px; 
+    height: 835px; 
+    left: -226px; 
+    top: 148px; 
+    position: absolute; 
+    background: #FFCD00; 
+    border-radius: 9999px;
+  }
+  .youvearrived{
+    width: 348px;
+    height: 100px;
+    left: 23px;
+    top: 450px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 40px;
+    word-wrap: break-word;
+  }
+  
+  .Eyes {
+    position: absolute;
+    top: 30%;      
+    left: 25.14%;     
+    display: flex;
+    gap: 8.40%;       
+  }
+  
+  .Mata {
+    width: 93px;      
+    height: 88px;   
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .Pupil {
+    width: 60px;     
+    height: 60px;    
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .mouth {
+    width: 87px;
+    height: 50px;
+    left: 150px; 
+    top: 360px; 
+    position: absolute;
+    background: #000;
+    border-radius: 0 0 90px 90px;
+  }
+  
+  

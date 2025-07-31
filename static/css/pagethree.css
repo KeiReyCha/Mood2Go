@@ -1,0 +1,169 @@
+
+.pagethree {
+    position: relative;         
+    width: 393px;
+    height: 852px;
+    background: #ECECD4;
+    overflow: hidden;
+    justify-content: center;
+}
+.body{
+    width: 846px; 
+    height: 835px; 
+    left: -226px; 
+    top: 148px; 
+    position: absolute; 
+    background: #8379D9; 
+    border-radius: 9999px;
+}
+.Whatvibeyourecravingrightnow{
+    width: 348px; 
+    height: 100px; 
+    left: 23px; 
+    top: 450px; 
+    position: absolute; 
+    text-align: center; 
+    justify-content: center; 
+    display: flex; 
+    flex-direction: column; 
+    color: white; 
+    font-size: 40px; 
+    font-family: Poppins; 
+    font-weight: 700; 
+    line-height: 40px; 
+    word-wrap: break-word
+}
+.Eyes {
+  position: absolute;
+  top: 30%;     
+  left: 25.14%;     
+  display: flex;
+  gap: 8.40%;     
+}
+.Mata {
+  width: 93px;     
+  height: 88px;     
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.Pupil {
+  width: 60px;     
+  height: 60px;     
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mouth{
+    left: 155px; 
+    top: 350px; 
+    position: absolute;
+}
+.glasses{
+    left: 44px; 
+    top: 297px; 
+    position: absolute
+}
+
+.vibebutton {
+  top: 600px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem; 
+  padding: 1rem;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.vibe-btn{
+    min-width: 120px;
+    height: 41px;
+    padding: 11px 11px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.vibe-btn:hover {
+  opacity: 0.7;
+}
+.vibe-btn.active {
+  opacity: 1;
+  background: #000;
+}
+
+.next-link {
+  position: fixed;
+  right: 500px;
+  bottom: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111;
+  padding: 10px 24px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  margin: 28px auto 0 auto;
+}
+.next-link:hover, .next-link:focus {
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.18);
+}
+.arrow {
+  font-size: 1.3em;
+  transition: transform 0.2s;
+}
+.next-link:hover .arrow {
+  transform: translateX(6px);
+}
+
+.back {
+  position: absolute;
+  bottom: 17px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #6a6a6a;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.back :hover {
+  color: #000000;
+}
+
+.back :active {
+  transform: scale(0.95);
+}
+
+.back svg {
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,98 @@
+
+.page5 {
+  position: relative;         
+  width: 393px;
+  height: 852px;
+  background: #ECECD4;
+  overflow: hidden;
+  justify-content: center;
+}
+
+
+#map5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+
+.gobutton {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.go-btn {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.go-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.go-btn:active {
+  transform: scale(0.95);
+}
+
+.go-btn svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-45deg);
+}
+  
+
+.custom-infowindow {
+    font-family: Poppins, sans-serif;
+    color: black;
+    min-width: 180px;
+    padding: 8px;
+}
+.custom-infowindow .label {
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.custom-infowindow .place-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.custom-infowindow .rating,
+.custom-infowindow .reason,
+.custom-infowindow .details {
+    font-size: 15px;
+}
+
+.page5 .flood-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ECECD4;
+  transform: translateY(0);               
+  transition: transform 0.9s cubic-bezier(0.4,0,0.2,1) 0s,  
+              opacity    0.3s ease-in    0.9s; 
+}
+
+.page5 .flood-box.slid {
+  transform: translateY(100%);          
+  opacity: 0;                            
+}

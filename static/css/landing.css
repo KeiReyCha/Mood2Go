@@ -1,0 +1,293 @@
+#dynamicContent {
+  visibility: hidden;
+}
+
+#dynamicContent.visible {
+  visibility: visible;
+  transition: visibility 0s 0s, opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EBEBEB;
+  font-family: 'Poppins', sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.LandingPage .Frame1 {
+  animation: contentFadeIn 0.8s ease-out 0.6s both;
+}
+
+.LandingPage .BadanCharacter {
+  animation: bodySlideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.LandingPage .Eyes {
+  animation: faceSlideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+}
+
+.LandingPage .Mulut {
+  animation: faceSlideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+}
+
+.LandingPage .Button {
+  animation: buttonFadeIn 0.6s ease-out 1s both;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #333;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+
+.LandingPage .CharacterFace {
+  animation: characterFaceIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+}
+
+.Mood2Go {
+  position: absolute;
+  left: 23px;
+  top: 50px;
+  font-family: Poppins; 
+  font-weight: 700; 
+  line-height: 45px; 
+  word-wrap: break-word;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.LandingPage {
+  width: 100%;
+  max-width: 393px;
+  position: relative;
+  background: #ECECD4;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.LandingPage::before {
+  content: "";
+  display: block;
+  padding-top: 217.02%;  
+}
+.LandingContent {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ECECD4;
+}
+
+.Frame1 {
+  position: absolute;
+  top: 32.40%;       
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Title {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.Subs {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.letsgobutton {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+
+.letsgo-btn {
+    min-width: 120px;
+    height: 41px;
+    padding: 0  24px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.letsgo-btn:hover {
+  opacity: 0.7;
+}
+
+.letsgo-btn.active {
+  opacity: 1;
+  background: #000;
+}
+
+
+.BadanCharacter {
+  position: absolute;
+  width: 215.27%;   
+  height: 98.05%;   
+  left: -59.28%;    
+  top: 64.55%;      
+  background: #FFCD00;
+  border-radius: 50%;
+}
+
+.Eyes {
+  position: absolute;
+  top: 73.24%;      
+  left: 25.14%;     
+  display: flex;
+  gap: 8.40%;      
+}
+.Mata {
+  width: 93px;     
+  height: 88px;    
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.Pupil {
+  width: 60px;     
+  height: 60px;    
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Mulut {
+  position: absolute;
+  left: 40%;     
+  top: 85.15%;    
+}
+
+
+
+.next,
+.back {
+  width: 78px; 
+  height: 78px;
+  left: 132px;
+  top: 760px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  padding: 11px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  line-height: 24px;
+  transition: background 0.2s ease, opacity 0.2s ease;
+  z-index: 5;
+}
+
+.next:hover,
+.back:hover {
+  opacity: 0.7;
+}
+
+.next.active,
+.back.active {
+  opacity: 1;
+  background: #000;
+}
+
+#dynamicContent {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.LandingContent {
+  animation: contentFadeIn 0.8s ease-out 0.6s both;
+}
+
+
+#dynamicContent.page-out {
+  animation:
+    slideDown  0.4s ease-in both,
+    fadeOut    0.4s ease-in both;
+}
+
+
+@keyframes slideUp {
+  from { transform: translateY(20px); }
+  to   { transform: translateY(0);    }
+}
+@keyframes slideDown {
+  from { transform: translateY(0);    }
+  to   { transform: translateY(20px); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+.Mood2Go {
+  display: none;
+}
+
+body[data-page="page2.html"]  .Mood2Go,
+body[data-page="page3.html"]  .Mood2Go,
+body[data-page="page4.html"]  .Mood2Go,
+body[data-page="page5.html"]  .Mood2Go,
+body[data-page="page6.html"]  .Mood2Go,
+body[data-page="page7.html"]  .Mood2Go {
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 100;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #000;
+  pointer-events: none;
+}

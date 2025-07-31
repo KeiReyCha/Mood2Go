@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mood2Go – Eyes Follow Cursor</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/landing.css') }}"
+  />
+</head>
+<body>
+  <div class="LandingPage">
+    <div class="Mood2Go">Mood2Go</div>
+    <div id="dynamicContent" class="LandingContent">
+      <div class="Frame1">
+        <div class="Title">Mood2Go</div>
+        <div class="Subs">
+          Tell us your mood,<br />
+          We’ll find your next stop
+        </div>
+        <div class="letsgobutton" data-link="page2.html">
+          <div class="letsgo-btn">Let’s Go!</div>
+        </div>
+      </div>
+
+      <div class="CharacterFace" id="characterFace">
+        <div class="BadanCharacter"></div>
+        <div class="Eyes">
+          <div class="Mata"><div class="Pupil"></div></div>
+          <div class="Mata"><div class="Pupil"></div></div>
+        </div>
+        <div class="Mulut">
+          <svg width="76" height="26" viewBox="0 0 76 26" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 9C26.5 19 46.5 19 67 9"
+                  stroke="black" stroke-width="18" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/view.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/moodbuttons.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/mouthPath.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/vibebutton.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/slidernumber.js') }}"></script>
+
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_MAPS_API_KEY }}&libraries=geometry,places">
+  </script>
+  
+  <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/router.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/sendRequest.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/expandbox.js') }}"></script>
+</body>
+</html>
